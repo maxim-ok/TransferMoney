@@ -30,4 +30,16 @@ public class DataHelper {
         return new VerificationCode("12345");
     }
 
+    @Value
+    public static class TransferInfo {
+        private String amount;
+        private String cardNumber;
+    }
+
+    public static TransferInfo getTransferInfo() {
+        return new TransferInfo("500", "5559 0000 0000 0001");
+    }
+
+
+
 }
